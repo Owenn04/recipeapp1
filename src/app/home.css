@@ -1,0 +1,53 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style for the navbar */
+  .navbar {
+    height: 150px;
+    background-color: #333; /* You can replace this color with your desired color */
+  }
+  
+  /* Style for the main section */
+  .main-section {
+    width: 33.33%; /* 1/3 of the page width */
+    margin: 0 auto; /* Center the main section */
+    background-color: lightgrey;
+    height: 100vh; /* 100% of the viewport height */
+    box-sizing: border-box; /* Include padding and border in the width */
+    margin-top: -50px;
+  }
+
+  .title-bar {
+    width: 100%; /* Take up the full width of the main section */
+    height: 50px;
+    background-color: #90c4ff; /* You can replace this color with your desired color */
+  }
+  
+  /* Style for the secondary navbar */
+  .secondary-navbar {
+    width: 100%; /* Take up the full width of the main section */
+    height: 50px;
+    background-color: #2f82ff; /* You can replace this color with your desired color */
+  }
+
+  .content-wrapper {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Style for the left section */
+  .left-section {
+    width: 66.66%; /* 2/3 of the content wrapper */
+    background-color: #0077ffa1; /* Example background color */
+    margin-left: 40px;
+  }
+  
+  /* Style for the right section */
+  .right-section {
+    width: 33.33%; /* 1/3 of the content wrapper */
+    background-color: #072cff6c; /* Example background color */
+    margin-right: 40px;
+  }

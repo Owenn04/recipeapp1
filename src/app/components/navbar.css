@@ -1,0 +1,77 @@
+/* home.css */
+
+/* Your existing styles... */
+
+/* Add the following styles for the navbar */
+.navbar-items {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: rgb(255, 255, 255);
+    font-family:  Verdana, Geneva, sans-serif;
+    margin-top: -5px;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    margin-top: -43px;
+  }
+
+  .navbar-left{
+    margin-right: 100px;
+  }
+  
+  .upload-button {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+  }
+  
+  
+  .social-icons {
+    display: flex;
+    align-items: center; /* Vertically align the icons */
+    margin-right: 10px; /* Add spacing to the right of the icons */
+  }
+  
+  .social-icons a,
+  .social-icons a:hover {
+    margin-right: 20px; /* Add spacing between icons */
+    color: #333; /* Adjust icon color */
+  }
+  
+  .upload-button {
+    margin-right: 10px; /* Add spacing to the right of the button */
+  }
+  
+  .profile-picture {
+    margin-left: 10px; /* Add spacing to the left of the circle */
+  }
+  
+  .circle {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #b4ddff; /* Adjust circle background color */
+  }
+  
+  .circle a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  

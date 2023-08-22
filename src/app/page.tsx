@@ -1,9 +1,34 @@
+"use client"
+
+import { useState } from "react";
+
+
 import './home.css'
 import Navbar from './components/navbar'
-{/* <main className="flex min-h-screen flex-col items-center justify-between p-24"></main> */}
-//This is the home page
+import SecondaryNavbar from './components/secondarynavbar'
+import RightSide from './components/rightside'
+import Feed from './components/feed'
+
+const dummyData = [
+  {
+    image: 'https://www.holidify.com/images/cmsuploads/compressed/shoyu-ramen_20181227133143.jpg',
+    title: 'Article 1',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at vestibulum nulla.',
+    recipe: "",
+  },
+  {
+    image: 'https://www.feastingathome.com/wp-content/uploads/2022/08/Grilled-Salmon-9.jpg',
+    title: 'Article 2',
+    description: 'Vestibulum ultrices justo eget elit facilisis, id venenatis ante dictum.',
+    recipe: "",
+  },
+  // Add more dummy objects here
+];
 
 export default function Home() {
+
+  const [selectedTab, setSelectedTab] = useState('all')
+
   return (
     <div>
       <div className="navbar">
@@ -11,19 +36,35 @@ export default function Home() {
       </div>
       <div className="main-section">
         <div className="title-bar">
-          {/* Title content goes here */}
+          <h1>Dash Board</h1>
         </div>
         <div className="secondary-navbar">
-          {/* Secondary navbar content goes here */}
+        <SecondaryNavbar
+            selectedTab={selectedTab}
+            onSelectTab={setSelectedTab}
+          />
         </div>
         <div className="content-wrapper">
           <div className="left-section">
-            {/* Left section content goes here */}
-            <p>left</p>
-          </div>
+
+          {selectedTab === 'all' && 
+          <div>
+            <Feed items={dummyData} />
+          </div>}
+
+          {selectedTab === 'you' && 
+          <div>
+            <p>You</p>
+          </div>}
+
+          {selectedTab === 'liked' && 
+          <div>
+            <p>Liked</p>
+          </div>}
+
+        </div>
           <div className="right-section">
-            {/* Right section content goes here */}
-            <p>right</p>
+            <RightSide/>
           </div>
         </div>
       </div>

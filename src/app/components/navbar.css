@@ -1,8 +1,4 @@
-/* home.css */
 
-/* Your existing styles... */
-
-/* Add the following styles for the navbar */
 .navbar-items {
     padding-top: 30px;
     display: flex;
@@ -40,29 +36,29 @@
   
   .social-icons {
     display: flex;
-    align-items: center; /* Vertically align the icons */
-    margin-right: 10px; /* Add spacing to the right of the icons */
+    align-items: center; 
+    margin-right: 10px; 
   }
   
   .social-icons a,
   .social-icons a:hover {
-    margin-right: 20px; /* Add spacing between icons */
-    color: #333; /* Adjust icon color */
+    margin-right: 20px; 
+    color: #333; 
   }
   
   .upload-button {
-    margin-right: 10px; /* Add spacing to the right of the button */
+    margin-right: 10px; 
   }
   
   .profile-picture {
-    margin-left: 10px; /* Add spacing to the left of the circle */
+    margin-left: 10px; 
   }
   
   .circle {
     width: 75px;
     height: 75px;
     border-radius: 50%;
-    background-color: #b4ddff; /* Adjust circle background color */
+    background-color: #b4ddff; 
   }
   
   .circle a {

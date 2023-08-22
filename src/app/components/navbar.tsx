@@ -1,3 +1,5 @@
+
+
 import Link from 'next/link';
 import './navbar.css'
 import { FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa';
@@ -22,7 +24,7 @@ export default function Navbar() {
       <a href="https://github.com/your_github_username">
         <FaGithub size={20} />
       </a>
-          <Link href="#" className="upload-button">Upload Recipe</Link>
+          <Link href="/create" className="upload-button">Upload Recipe</Link>
           <div className="profile-picture">
             <a href="link_to_your_image">
             <div className="circle"></div>

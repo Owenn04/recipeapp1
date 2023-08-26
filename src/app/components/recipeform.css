@@ -1,0 +1,64 @@
+
+.recipeForm {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto; /* This centers the form horizontally */
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #333;
+    margin-top: 20px;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    overflow-y: auto; /* Add scrollbars if the content overflows */
+  }
+  
+  /* Add margin to the sides */
+  @media screen and (min-width: 768px) {
+    .recipeForm {
+      margin-left: 10px;
+      margin-right: 10px;
+      max-height: 95vh;
+    }
+  }
+  
+
+/* ... other styles ... */
+
+/* Add responsiveness to label columns */
+@media screen and (max-width: 768px) {
+    .labelColumn {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Make recipeContent responsive */
+  .recipeContent {
+    height: 300px;
+    width: 100%; /* Change back to 100% */
+  }
+  
+  /* Add responsiveness to input */
+  .recipeInput {
+    margin-left: 20px;
+    width: 100%;
+  }
+  
+  /* Make recipeDescription responsive */
+  .recipeDescription {
+    margin-left: 20px;
+    width: 100%;
+    max-width: 30rem; /* Add a maximum width */
+  }
+  
+  /* Make recipeArea responsive */
+  .recipeArea {
+    margin-left: 20px;
+    width: 100%;
+    height: 300px;
+  }
+  
+  /* ... other styles ... */
+  
